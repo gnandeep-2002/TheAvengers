@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:text="Android dev with internshala"
+        android:textSize="18sp"
+        android:textColor="#01579b"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+
+        />
+    <TextView
+        android:id="@+id/Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Hello world"
+        android:layout_below="@id/Header"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="#d84315"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <ImageView
+        android:id="@+id/imgTonyStark"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/tony_stark"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/btnClickHere"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:text="Jarvis"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        />
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Username here:"
+        android:layout_below="@id/Subheader"
+        android:layout_margin="20dp"
+        android:inputType="text"
+
+
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Password here"
+        android:layout_below="@id/etName"
+        android:layout_margin="20dp"
+        android:inputType="textPassword"
+        />
+</RelativeLayout>
